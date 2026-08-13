@@ -2,7 +2,7 @@ contract_version = "1"
 
 [gym]
 name = "claudecodegym"
-domain = "software_engineering_agent_evaluation"
+domain = "code_reasoning"
 mode = "offline_simulation"
 
 [exercise]
@@ -14,4 +14,4 @@ semantics = 2
 evaluation = 2
 runtime = 3
 evidence = 4
-operations = 3
+operations = 2
