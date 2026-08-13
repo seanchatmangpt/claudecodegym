@@ -9,7 +9,7 @@ ClaudeCodeGym separates four evidence layers:
 
 ## Scenario calculus
 
-`ScenarioFactory` manufactures deterministic cases from `ToolFact × permission mode × failure disposition`, pruning impossible denial cases. This is a bounded test topology, not a claim that every tool exists on every Claude Code surface or plan. Surface/plan availability stays source evidence until observed by an execution adapter.
+`ScenarioFactory` manufactures deterministic cases from `ToolFact × permission mode × failure disposition`, pruning impossible denial cases. This is a bounded test topology, not a claim that every tool exists on every Claude Code surface or plan. Surface/plan availability stays source evidence until observed by an execution adapter. `EXPECTED_SUCCESS` is a manufactured expectation, never an ALIVE standing; only a real executed case may earn ALIVE.
 
 ## Freshness
 

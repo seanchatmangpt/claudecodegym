@@ -33,7 +33,7 @@ class ScenarioFactory:
             for failure in FAILURES:
                 if failure=="denied" and not (tool.permission_required_default or mode in {"dontAsk","plan"}):
                     continue
-                expected = "REFUSED" if failure=="denied" else ("UNSUPPORTED" if failure=="unavailable" else ("BLOCKED" if failure=="timeout" else "ALIVE"))
+                expected = "REFUSED" if failure=="denied" else ("UNSUPPORTED" if failure=="unavailable" else ("BLOCKED" if failure=="timeout" else "EXPECTED_SUCCESS"))
                 p={"tool":tool.name,"permission_mode":mode,"failure":failure,"expected":expected}
                 cases.append(Scenario(self._id(p),tool.name,tool.consequence,mode,failure,expected))
         return tuple(cases)
