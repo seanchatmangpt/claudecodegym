@@ -8,4 +8,4 @@ source = "ggen/claudecode-gymact-pack/ontology.ttl"
 claudecode-gymact-pack = { path = "ggen/claudecode-gymact-pack" }
 
 [templates]
-dir = "ggen/claudecode-gymact-pack/templates"
+dir = "templates"
